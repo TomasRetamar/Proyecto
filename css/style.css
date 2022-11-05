@@ -1,0 +1,269 @@
+
+.sectionNav{
+    display: flex;
+    flex-direction: row;
+    background-color: #3c3583;
+    justify-content: start;
+    align-items: center;
+}
+.logoNav a img{
+    height: 7.5em;
+    width: 7.5;
+}
+.liNav nav ul{
+    display: flex;
+    flex-direction: row;
+}
+.liNav nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6em;
+    padding-right: 6em;
+    list-style: none;
+}
+.liNav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.presupuesto{
+    width: max-content;
+    height: max-content;
+    margin: 2em;
+    padding: 1em;
+    border-width: 1em;
+    padding: 1em;
+    border-style: double;
+}
+body {
+    font-family: italic;
+    background-color: rgb(197, 191, 191);
+}
+.imgIndex{
+    border-style: double;
+}
+.trabajosMotores {
+    width: 15em;
+    height: 15em;
+    margin: 2em;
+    margin-top: 5em;
+    padding: 2em;
+    border-width: 1em;
+    border-style: double;
+    background-color: gray;
+}
+.trabajosTapas {
+    width: 15em;
+    height: 15em;
+    margin: 2em;
+    margin-top: 5em;
+    padding: 2em;
+    border-width: 1em;
+    border-style: double;
+    background-color: gray;
+}
+.trabajosEmbragues {
+    width: 15em;
+    height: 12em;
+    margin: 2em;
+    margin-top: 5em;
+    padding: 2em;
+    border-width: 1em;
+    border-style: double;
+    background-color: gray;
+}
+.trabajosExtra{
+    width: 15em;
+    height: 12em;
+    margin: 2em;
+    margin-top: 5em;
+    padding: 2em;
+    border-width: 1em;
+    border-style: double;
+    background-color: gray;
+}
+.trabajos{
+    display: inline-flex;
+}
+.h1trabajos{display: block;
+    align-content: center;
+}
+.cepilladoras{
+    height: 25em;
+    width: 50em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.cepilladora1{
+    width: 20em;
+    height: 15em;
+}
+.cepilladora2{
+    width: 20em;
+    height: 15em;
+}
+.asientos{
+    height: 27em;
+    width: 50em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.asientos1{
+    width: 20em;
+    height: 20em;
+}
+.asientos2{
+    width: 20em;
+    height: 20em;
+}
+.torno{
+    height: 27em;
+    width: 35em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.torno1{
+    width: 30em;
+    height: 20em;
+}
+.alezadora{
+    width: 35em;
+    height: 27em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.alezadora1{
+    height: 20em;
+    width: 20em;
+}
+.recValvulas{
+    height: 27em;
+    width: 42em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.valvulas1{
+    height: 20em;
+    width: 20em;
+}
+.valvulas2{
+    height: 20em;
+    width: 20em;
+}
+.recVolantes{
+    height: 27em;
+    width: 27em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.volantes{
+    width: 20em;
+    height: 20em;
+}
+.pInyectores{
+    height: 27em;
+    width: 27em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.inyectores{
+    width: 20em;
+    height: 20em;
+}
+.granalladora{
+    height: 33em;
+    width: 27em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.granalladora1{
+    width: 25em;
+    height: 25em;
+}
+.pHidraulica{
+    width: 27em;
+    height: 29em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.pruebaHidraulica{
+    height: 20em;
+    width: 20em;
+}
+.historia{
+    width: 110em;
+    height: 35em;
+    margin: 2em;
+    padding: 1em;
+    border: 1em;
+    padding: 1em;
+    border-style: double;
+}
+.historia1{
+    width: 25em;
+    height: 25em;
+}
+.historia2{
+    width: 25em;
+    height: 25em;
+}
+.historia3{
+    width: 25em;
+    height: 25em;
+}
+.historia4{
+    width: 25em;
+    height: 25em;
+}
+.rss{
+    height: 2em;
+    width: 9em;
+    margin: 2em;
+    padding: 1em;
+    border-width: 1em;
+    padding: 1em;
+    border-style: double;
+    text-decoration: none;
+}
+.ubicacion{
+    margin: 2em;
+    padding: 1em;
+    border-width: 1em;
+    padding: 1em;
+}
