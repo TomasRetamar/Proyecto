@@ -46,7 +46,7 @@
 }
 body {
     font-family: italic;
-    background-color: rgb(197, 191, 191);
+    background-color: #212529;
 }
 .imgIndex{
     border-style: double;
@@ -251,15 +251,21 @@ body {
     width: 25em;
     height: 25em;
 }
-.rss{
-    height: 2em;
-    width: 9em;
-    margin: 2em;
-    padding: 1em;
-    border-width: 1em;
-    padding: 1em;
-    border-style: double;
+.rss{display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: red;
     text-decoration: none;
+}
+svg{
+    color: red;
+}
+.rss div a svg{
+    justify-content: space-between;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
 }
 .ubicacion{
     margin: 2em;
