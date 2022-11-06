@@ -6,9 +6,8 @@
     justify-content: start;
     align-items: center;
 }
-.logoNav a img{
-    height: 7.5em;
-    width: 7.5;
+.navbar{
+    background: linear-gradient(to bottom, #981914,#191919, #404040)
 }
 .liNav nav ul{
     display: flex;
@@ -34,7 +33,6 @@
     align-content: space-around;
     align-items: center;
 }
-
 .presupuesto{
     width: max-content;
     height: max-content;
@@ -46,10 +44,10 @@
 }
 body {
     font-family: italic;
-    background-color: #212529;
+    background-color: #404040;
 }
-.imgIndex{
-    border-style: double;
+.footerContacto h2{
+    color: #981914;
 }
 .trabajosMotores {
     width: 15em;
