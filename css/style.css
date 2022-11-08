@@ -46,9 +46,6 @@ body {
     font-family: italic;
     background-color: #404040;
 }
-.footerContacto h2{
-    color: #981914;
-}
 .trabajosMotores {
     width: 15em;
     height: 15em;
@@ -255,6 +252,9 @@ body {
     color: red;
     text-decoration: none;
 }
+.rss div a svg:hover{
+    transform: scale(1.50);
+}
 svg{
     color: red;
 }
@@ -269,4 +269,7 @@ svg{
 }
 .ubicacion{
     padding-top: 1em;
+}
+@media screen (min-width: 768px;){
+    .ubicacion{width: 150px; height: 100px;}
 }
