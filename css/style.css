@@ -26,6 +26,37 @@
     align-content: space-around;
     align-items: center;
 }
+.gridPresupuesto{
+    justify-content: baseline;
+    display: grid;
+    grid-template-rows: repeat(6) 16.5rem;
+    grid-template-columns: auto;
+    grid-template-areas: 'grid1 grid2 grid3 grid4 grid5 grid6';
+}
+.grid1{
+    grid-area: grid1;
+}
+.grid2{
+    grid-area: grid2;
+}
+.grid3{
+    grid-area: grid3;
+}
+.grid4{
+    grid-area: grid4;
+}
+.grid5{
+    grid-area: grid5;
+}
+.grid6{
+    grid-area: grid6;
+}
+.h1presupuesto{
+    text-align: center;
+    font-size: 4rem;
+    color: #981914;
+    padding: 4rem;
+}
 .gridContainer{
     width: auto;
     height: auto;
@@ -81,8 +112,8 @@ div .hist{
     height: 25rem;
 }
 .presupuesto{
-    width: 450px;
-    height: max-content;
+    width: 60rem;
+    height: 20rem;
     margin: 2em;
     padding: 1em;
     border-width: 1em;
@@ -139,32 +170,6 @@ body {
 .h1trabajos{display: block;
     align-content: center;
 }
-
-.historia{
-    width: 110em;
-    height: 35em;
-    margin: 2em;
-    padding: 1em;
-    border: 1em;
-    padding: 1em;
-    border-style: double;
-}
-.historia1{
-    width: 25em;
-    height: 25em;
-}
-.historia2{
-    width: 25em;
-    height: 25em;
-}
-.historia3{
-    width: 25em;
-    height: 25em;
-}
-.historia4{
-    width: 25em;
-    height: 25em;
-}
 .rss{display: flex;
     justify-content: space-around;
     align-content: center;
@@ -196,4 +201,7 @@ svg{
     padding-top: 1em;
     width: 31.2rem;
     height: 21.8rem;
+}
+@media (max-width:768px){
+
 }
