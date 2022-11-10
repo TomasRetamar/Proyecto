@@ -42,41 +42,40 @@
         <h1 class="h1presupuesto">Presupuesto online</h1>
         <div class="gridPresupuesto">
             <div class="grid1"> 
-                <div class="nombreApellido">
-                    <label for="nombreApellido">Nombre y apellido</label>
-                    <input type="text" id="nombreApellido" name="nombre-apellido" placeholder="Nombre y apellido">
+                <div class="mb-3 pb-2">
+                    <label for="exampleFormControlInput1" class="form-label text-light">Nombre y apellido</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3 pt-2">
+                    <label for="exampleFormControlInput1" class="form-label text-light">Numero de telefono</label>
+                    <input type="telefono" class="form-control" id="exampleFormControlInput1" placeholder="+54">
                 </div>
             </div>
             <div class="grid2">
-                <div class="tel">
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono">
+                <div class="mb-3 pb-2">
+                    <label for="exampleFormControlInput1" class="form-label text-light">Correo electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="__________@______.com">
+                </div>
+                <div class="mb-3 pb-2 pt-2">
+                    <label for="exampleFormControlTextarea1" class="form-label text-light">Detalles sobre el trabajo...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Detalles de el trabajo, modelo y que trabajo necesita hacer..." rows="3"></textarea>
                 </div>
             </div>
             <div class="grid3">
-                <div class="email">
-                    <label for="correoElectronico">Correo electronico</label>
-                    <input type="email" id="correoElectronico" name="nombre-apellido" placeholder="Correo Electronico">
+                <label for="form-select" class="form-label text-light ">Tipo de trabajo</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione su trabajo</option>
+                    <option value="tapa">Tapa de cilindro</option>
+                    <option value="motor">Motor</option>
+                    <option value="embrague">Embrague</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <div class="mb-3 pb-5 pt-5">
+                    <label for="formFile" class="form-label text-light">Foto de el trabajo</label>
+                    <input class="form-control" type="file" id="formFile">
                 </div>
-            </div>
-            <div class="grid4">
-                <div class="comentariosDiv">
-                    <label for="Comentarios"> Comentarios</label>
-                    <textarea name="comentarios" id="comentarios" cols="10" rows="5" placeholder="Dejanos tu duda o consulta sobre el trabajo"></textarea>
-                </div>
-            </div>
-            <div class="grid5">
-                <div class="trabajoDiv">
-                    <select name="" id="trabajo">
-                        <option value="tapaCilindro">Tapa de cilindro</option>
-                        <option value="motor">Motor</option>
-                        <option value="embrague">Embrague</option>
-                    </select>
-                </div>
-            </div>
-            <div class="grid6">
-                <div class="enviar">
-                    <input type="submit" value="Enviar consulta">
+                <div class="col-12 pt-1 d-flex flex-row-reverse">
+                    <button type="submit" class="btn btn-danger text-light">Enviar</button>
                 </div>
             </div>
         </div>
