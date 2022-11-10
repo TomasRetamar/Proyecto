@@ -215,6 +215,9 @@ svg{
         padding-top: 3rem;
         flex-direction: column;
     }
+    div .ubicacion{
+        padding-top: 2rem;
+    }
 }
 @media screen and (min-width:768px){
     .gridTrabajos{
@@ -244,5 +247,8 @@ svg{
     div .ubicacion iframe{
         height: 300px;
         width: 300px;
+    }
+    div .ubicacion{
+        padding-top: 3rem;
     }
 }
