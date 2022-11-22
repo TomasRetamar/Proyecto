@@ -1,0 +1,46 @@
+body {
+    font-family: italic;
+    background-color: #404040;   
+    .navbar{
+        background: linear-gradient(to bottom, #981914,#191919, #404040)
+    }
+    .redes{
+        .rss{
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            text-decoration: none;
+            div a svg:hover{
+                transform: scale(1.50);
+            }
+            div a svg{
+                justify-content: space-between;
+                padding-top: 1em;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        svg{
+            color: #981914;
+        }
+    }
+    
+}
+.ubicacion iframe{
+    padding-top: 1em;
+    width: 31.2rem;
+    height: 21.8rem;
+    }
+.footer{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to top, #981914,#191919, #404040);
+    div h2{
+        color: whitesmoke;
+    }
+    .contactoFt{
+        max-width: 31.2rem;
+    }
+}

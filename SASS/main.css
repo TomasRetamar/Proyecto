@@ -1,0 +1,311 @@
+body {
+  font-family: italic;
+  background-color: #404040;
+}
+body .navbar {
+  background: linear-gradient(to bottom, #981914, #191919, #404040);
+}
+body .redes .rss {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  text-decoration: none;
+}
+body .redes .rss div a svg:hover {
+  transform: scale(1.5);
+}
+body .redes .rss div a svg {
+  justify-content: space-between;
+  padding-top: 1em;
+  width: 3rem;
+  height: 3rem;
+}
+body .redes svg {
+  color: #981914;
+}
+
+.ubicacion iframe {
+  padding-top: 1em;
+  width: 31.2rem;
+  height: 21.8rem;
+}
+
+.footer {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to top, #981914, #191919, #404040);
+}
+.footer div h2 {
+  color: whitesmoke;
+}
+.footer .contactoFt {
+  max-width: 31.2rem;
+}
+
+main .h1Hist {
+  text-align: center;
+  font-size: 4rem;
+  color: #981914;
+}
+main div.gridContainer {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imgL hist imgR";
+}
+main div.gridContainer .hist {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  width: 45rem;
+  color: rgb(233, 229, 229);
+  padding-right: 2rem;
+  grid-area: hist;
+}
+main div.gridContainer .imgR {
+  grid-area: imgR;
+  display: flex;
+  align-items: center;
+}
+main div.gridContainer .imgR .imgH3 {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  width: 30rem;
+  height: 40rem;
+}
+main div.gridContainer .imgL {
+  grid-area: imgL;
+  display: flex;
+  align-items: center;
+}
+main div.gridContainer .imgL .imgH2 {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  width: 30rem;
+  height: 40rem;
+}
+
+.h1trabajos {
+  text-align: center;
+  font-size: 4rem;
+  color: #981914;
+}
+
+div.gridTrabajos {
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  grid-template-rows: 30rem;
+  grid-template-areas: "Motor1 Tapa1 Embrague1 Extra1";
+}
+div.gridTrabajos .gridMotores {
+  grid-area: Motor1;
+}
+div.gridTrabajos .gridTapas {
+  grid-area: Tapa1;
+}
+div.gridTrabajos .gridEmbragues {
+  grid-area: Embrague1;
+}
+div.gridTrabajos .gridExtra {
+  grid-area: Extra1;
+}
+
+.gridTrabajos div div ul li {
+  background-color: #191919;
+  color: white;
+  border-color: red;
+}
+
+.gridPresupuesto {
+  justify-content: baseline;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "grid1 grid2 grid3";
+}
+.gridPresupuesto .grid1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  grid-area: grid1;
+}
+.gridPresupuesto .grid2 {
+  grid-area: grid2;
+}
+.gridPresupuesto .grid3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  grid-area: grid3;
+}
+
+.h1presupuesto {
+  text-align: center;
+  font-size: 4rem;
+  color: #981914;
+  padding: 4rem;
+}
+
+.presupuesto {
+  width: 60rem;
+  height: 20rem;
+  margin: 2em;
+  padding: 1em;
+  border-width: 1em;
+  padding: 1em;
+  border-style: double;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.gridTrabajos {
+    justify-content: center;
+    display: grid;
+    padding-left: 4rem;
+    grid-template-columns: 20rem;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "motor" "tapa" "embrague" "extra";
+  }
+  div.gridTrabajos .gridTapas {
+    grid-area: tapa;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  div.gridTrabajos .gridMotores {
+    padding-left: 0rem;
+    grid-area: motor;
+    padding-bottom: 1.5rem;
+  }
+  div.gridTrabajos .gridEmbragues {
+    grid-area: embrague;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  div.gridTrabajos .gridExtra {
+    grid-area: extra;
+    padding-top: 1.5rem;
+  }
+  .h1trabajos {
+    font-size: 2rem;
+  }
+  .footer {
+    padding-top: 3rem;
+    flex-direction: column;
+  }
+  div.ubicacion {
+    padding-top: 2rem;
+  }
+  iframe {
+    width: 21rem;
+    height: 15rem;
+  }
+  div.gridContainer {
+    justify-content: center;
+    grid-template-columns: 30rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "imgR" "hist" "imgL";
+  }
+  div.gridContainer .imgR {
+    grid-area: imgR;
+    padding: 0;
+  }
+  div.gridContainer .imgR .imgH3 {
+    width: 31rem;
+    height: 20rem;
+    padding: 0;
+  }
+  div.gridContainer .imgR .imgH4 {
+    display: hidden;
+  }
+  div.gridContainer .imgL {
+    grid-area: imgL;
+  }
+  div.gridContainer .imgL .imgH1 {
+    display: hidden;
+  }
+  div.gridContainer .imgL .imgH2 {
+    width: 31rem;
+    height: 20rem;
+    padding: 0;
+  }
+  div.gridContainer .hist {
+    padding-top: 1rem;
+    grid-area: hist;
+    font-size: 1rem;
+    width: 31rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div.gridTrabajos {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "motor tapa" "embrague extra";
+  }
+  div.gridTrabajos .gridTapas {
+    grid-area: tapa;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+  }
+  div.gridTrabajos .gridMotores {
+    grid-area: motor;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+  }
+  div.gridTrabajos .gridEmbragues {
+    grid-area: embrague;
+    padding-left: 4rem;
+  }
+  div.gridTrabajos .gridExtra {
+    grid-area: extra;
+    padding-left: 4rem;
+  }
+  div.ubicacion iframe {
+    height: 300px;
+    width: 300px;
+    padding-top: 3rem;
+  }
+  div.footer {
+    padding-top: 3rem;
+  }
+  div.rss {
+    padding-top: 7.5rem;
+  }
+  div.gridContainer {
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: 30rem auto 30rem;
+    grid-template-areas: "imgR" "hist" "imgL";
+  }
+  div.gridContainer .imgR {
+    grid-area: imgR;
+  }
+  div.gridContainer .imgR .imgH3 {
+    width: 45rem;
+    height: 30rem;
+    padding: 0;
+  }
+  div.gridContainer .imgL {
+    grid-area: imgL;
+  }
+  div.gridContainer .imgL .imgH2 {
+    width: 45rem;
+    height: 30rem;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  div.gridContainer .hist {
+    grid-area: hist;
+    width: 45rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
