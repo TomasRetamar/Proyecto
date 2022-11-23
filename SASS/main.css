@@ -204,9 +204,9 @@ div.gridTrabajos .gridExtra {
     height: 15rem;
   }
   div.gridContainer {
-    justify-content: center;
-    grid-template-columns: 30rem;
-    grid-template-rows: auto auto auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20rem auto 20rem;
     grid-template-areas: "imgR" "hist" "imgL";
   }
   div.gridContainer .imgR {
@@ -218,14 +218,8 @@ div.gridTrabajos .gridExtra {
     height: 20rem;
     padding: 0;
   }
-  div.gridContainer .imgR .imgH4 {
-    display: hidden;
-  }
   div.gridContainer .imgL {
     grid-area: imgL;
-  }
-  div.gridContainer .imgL .imgH1 {
-    display: hidden;
   }
   div.gridContainer .imgL .imgH2 {
     width: 31rem;
@@ -235,7 +229,7 @@ div.gridTrabajos .gridExtra {
   div.gridContainer .hist {
     padding-top: 1rem;
     grid-area: hist;
-    font-size: 1rem;
+    font-size: 0.5rem;
     width: 31rem;
   }
 }

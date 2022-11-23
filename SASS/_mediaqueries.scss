@@ -46,12 +46,10 @@
     }
     
     div.gridContainer{
-        justify-content: center;
-        grid-template-columns: 30rem ;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: 'imgR'
-                            'hist'
-                            'imgL';
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem auto 20rem;
+        grid-template-areas: 'imgR' 'hist' 'imgL';
         .imgR{
             grid-area: imgR;
             padding: 0;
@@ -60,15 +58,9 @@
                 height: 20rem;
                 padding: 0;
             }
-            .imgH4{
-                display: hidden;
-            }
         }
         .imgL{
             grid-area: imgL;
-            .imgH1{
-                display: hidden;
-            }
             .imgH2{
                 width: 31rem;
                 height: 20rem;
@@ -78,7 +70,7 @@
         .hist{
             padding-top: 1rem;
             grid-area: hist;
-            font-size: 1rem;
+            font-size: 0.5rem;
             width: 31rem;
         }
     }
