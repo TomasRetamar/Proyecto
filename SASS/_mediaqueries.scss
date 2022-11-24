@@ -1,4 +1,4 @@
-@media screen and (min-width:576px) and (max-width:767px){
+@media (min-width:576px) and (max-width:767px) {
     div.gridTrabajos{
         justify-content: center;
         display: grid;
@@ -44,13 +44,16 @@
         width: 21rem;
         height: 15rem;
     }
-    
+    .rss{
+        padding-top: 1rem;
+    }
     div.gridContainer{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 20rem auto 20rem;
         grid-template-areas: 'imgR' 'hist' 'imgL';
         .imgR{
+            justify-content: center;
             grid-area: imgR;
             padding: 0;
             .imgH3{
@@ -61,6 +64,7 @@
         }
         .imgL{
             grid-area: imgL;
+            justify-content: center;
             .imgH2{
                 width: 31rem;
                 height: 20rem;
@@ -68,15 +72,17 @@
             }
         }
         .hist{
+            padding-left: 6rem;
             padding-top: 1rem;
             grid-area: hist;
-            font-size: 0.5rem;
+            font-size: 1rem;
             width: 31rem;
         }
     }
 }
-@media screen and (min-width:768px) and (max-width:1024px){
+@media (min-width:768px) and (max-width:1024px){
     div.gridTrabajos{
+        padding-bottom: 0;
         justify-content: center;
         display: grid;
         grid-template-rows: 1fr 1fr;

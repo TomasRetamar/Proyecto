@@ -49,7 +49,8 @@ main .h1Hist {
   font-size: 4rem;
   color: #981914;
 }
-main div.gridContainer {
+
+div.gridContainer {
   width: auto;
   height: auto;
   display: grid;
@@ -57,7 +58,7 @@ main div.gridContainer {
   grid-template-rows: auto;
   grid-template-areas: "imgL hist imgR";
 }
-main div.gridContainer .hist {
+div.gridContainer .hist {
   text-align: center;
   font-size: 1.8rem;
   font-family: sans-serif;
@@ -66,23 +67,23 @@ main div.gridContainer .hist {
   padding-right: 2rem;
   grid-area: hist;
 }
-main div.gridContainer .imgR {
+div.gridContainer .imgR {
   grid-area: imgR;
   display: flex;
   align-items: center;
 }
-main div.gridContainer .imgR .imgH3 {
+div.gridContainer .imgR .imgH3 {
   padding-left: 1.5rem;
   padding-bottom: 1rem;
   width: 30rem;
   height: 40rem;
 }
-main div.gridContainer .imgL {
+div.gridContainer .imgL {
   grid-area: imgL;
   display: flex;
   align-items: center;
 }
-main div.gridContainer .imgL .imgH2 {
+div.gridContainer .imgL .imgH2 {
   padding-top: 1rem;
   padding-left: 1.5rem;
   width: 30rem;
@@ -161,7 +162,7 @@ div.gridTrabajos .gridExtra {
   border-style: double;
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   div.gridTrabajos {
     justify-content: center;
     display: grid;
@@ -203,6 +204,9 @@ div.gridTrabajos .gridExtra {
     width: 21rem;
     height: 15rem;
   }
+  .rss {
+    padding-top: 1rem;
+  }
   div.gridContainer {
     display: grid;
     grid-template-columns: 100%;
@@ -210,6 +214,7 @@ div.gridTrabajos .gridExtra {
     grid-template-areas: "imgR" "hist" "imgL";
   }
   div.gridContainer .imgR {
+    justify-content: center;
     grid-area: imgR;
     padding: 0;
   }
@@ -220,6 +225,7 @@ div.gridTrabajos .gridExtra {
   }
   div.gridContainer .imgL {
     grid-area: imgL;
+    justify-content: center;
   }
   div.gridContainer .imgL .imgH2 {
     width: 31rem;
@@ -227,14 +233,16 @@ div.gridTrabajos .gridExtra {
     padding: 0;
   }
   div.gridContainer .hist {
+    padding-left: 6rem;
     padding-top: 1rem;
     grid-area: hist;
-    font-size: 0.5rem;
+    font-size: 1rem;
     width: 31rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   div.gridTrabajos {
+    padding-bottom: 0;
     justify-content: center;
     display: grid;
     grid-template-rows: 1fr 1fr;
