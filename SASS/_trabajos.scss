@@ -4,25 +4,11 @@
     color: #981914;
 }
 div.gridTrabajos{
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    display: grid;
-    grid-template-columns: repeat(4, 20rem);
-    grid-template-rows: 30rem;
-    grid-template-areas: 'Motor1 Tapa1 Embrague1 Extra1';
-    .gridMotores{
-        grid-area: Motor1;
-    }
-    .gridTapas{
-        grid-area: Tapa1;
-    }
-    .gridEmbragues{
-        grid-area: Embrague1;
-    }
-    .gridExtra{
-        grid-area: Extra1;
-    }
+    display: flex;
+    flex-direction: row;
 }
 .gridTrabajos div div ul li{
     background-color: #191919;

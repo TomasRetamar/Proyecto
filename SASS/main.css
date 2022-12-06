@@ -97,25 +97,11 @@ div.gridContainer .imgL .imgH2 {
 }
 
 div.gridTrabajos {
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  display: grid;
-  grid-template-columns: repeat(4, 20rem);
-  grid-template-rows: 30rem;
-  grid-template-areas: "Motor1 Tapa1 Embrague1 Extra1";
-}
-div.gridTrabajos .gridMotores {
-  grid-area: Motor1;
-}
-div.gridTrabajos .gridTapas {
-  grid-area: Tapa1;
-}
-div.gridTrabajos .gridEmbragues {
-  grid-area: Embrague1;
-}
-div.gridTrabajos .gridExtra {
-  grid-area: Extra1;
+  display: flex;
+  flex-direction: row;
 }
 
 .gridTrabajos div div ul li {
@@ -162,47 +148,94 @@ div.gridTrabajos .gridExtra {
   border-style: double;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 575px) {
   div.gridTrabajos {
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gridTapas {
+    padding-top: 1rem;
+  }
+  .gridMotores {
+    padding-top: 1rem;
+  }
+  .gridEmbragues {
+    padding-top: 1rem;
+  }
+  .gridExtra {
+    padding-top: 1rem;
+  }
+  section.footer {
+    flex-direction: column;
+  }
+  .ubicacion iframe {
+    width: 275px;
+    height: 225px;
+  }
+  .h1presupuesto {
+    font-size: 2rem;
+  }
+  div.gridContainer {
     display: grid;
-    padding-left: 4rem;
-    grid-template-columns: 20rem;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "motor" "tapa" "embrague" "extra";
+    grid-template-columns: 300px;
+    grid-template-rows: 210px auto 210px;
+    grid-template-areas: "imgR" "hist" "imgL";
   }
-  div.gridTrabajos .gridTapas {
-    grid-area: tapa;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+  div.gridContainer .imgR {
+    justify-content: center;
+    grid-area: imgR;
   }
-  div.gridTrabajos .gridMotores {
-    padding-left: 0rem;
-    grid-area: motor;
-    padding-bottom: 1.5rem;
+  div.gridContainer .imgR .imgH3 {
+    width: 275px;
+    height: 200px;
   }
-  div.gridTrabajos .gridEmbragues {
-    grid-area: embrague;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+  div.gridContainer .imgL {
+    grid-area: imgL;
+    justify-content: center;
   }
-  div.gridTrabajos .gridExtra {
-    grid-area: extra;
-    padding-top: 1.5rem;
+  div.gridContainer .imgL .imgH2 {
+    width: 275px;
+    height: 200px;
+  }
+  div.gridContainer .hist {
+    grid-area: hist;
+    font-size: 1rem;
+    width: 300px;
+    padding-left: 3rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.gridTrabajos {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gridTapas {
+    padding-top: 1rem;
+  }
+  .gridMotores {
+    padding-top: 1rem;
+  }
+  .gridEmbragues {
+    padding-top: 1rem;
+  }
+  .gridExtra {
+    padding-top: 1rem;
   }
   .h1trabajos {
     font-size: 2rem;
   }
-  .footer {
+  section.footer {
     padding-top: 3rem;
     flex-direction: column;
   }
   div.ubicacion {
     padding-top: 2rem;
   }
-  iframe {
-    width: 21rem;
-    height: 15rem;
+  .ubicacion iframe {
+    width: 500px;
+    height: 350px;
   }
   .rss {
     padding-top: 1rem;
